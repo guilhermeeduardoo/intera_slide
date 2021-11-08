@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --color: whitesmoke;
+    --fonte: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.slide-larg {
+    height: 100vh;
+    display: flex;
+    transition: all ease 1.5s;
+}
+
+.secao {
+    width: 100vw;
+    height: 100vh;
+    background-color: #111111;
+}
+
+.controles {
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,50%);
+    color: var(--color);
+    display: flex;
+    z-index: 9999;
+}
+
+.con {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: rgba(99, 98, 98, 0.356);
+    cursor: pointer;
+    background: rgba(225, 225, 225, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.003);
+    color: rgba(255, 255, 255, 0.534);
+    z-index: 100;
+}
+
+.onda-1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.onda-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.onda-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 37%;
+}
+
+.onda-4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 37%;
+}
+
+.secao {
+    position: relative;
+}
+
+.onda-5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+}
+
+.onda-6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 57%;
+}
+
+.onda-7 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20.3%;
+}
+
+.onda-8 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 19.6%;
+}
+
+.onda-9 {
+    float: right;
+    width: 20%;
+}
+
+.secao-4 {
+    overflow: hidden;
+}
+
+.circulo {
+    background-color: #18144D;
+    width: 20%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+}
+
+.int-circulo {
+    background-color: #19107D;
+    width: 18%;
+    height: 36%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8%;
+    right: -4%;
+}
+
+.vet {
+    position: absolute;
+    background: linear-gradient(226.29deg, #081537 17.32%, rgba(63, 24, 174, 0.5) 100%);
+    border-radius: 1px 114.5px 3px 3px;
+    width: 10%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+}
+
+.int-vet {
+    position: absolute;
+    background: linear-gradient(226.29deg, #0B2360 17.32%, rgba(73, 22, 220, 0.5) 100%);
+    border-radius: 1px 114.5px 3px 3px;
+    width: 9%;
+    height: 18%;
+    bottom: 0;
+    left: 0;
+}
+
+.circulo-left {
+    background-color: #230B4A;
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: -12%;
+    left: -6%;
+}
+
+.int-circulo-left {
+    position: absolute;
+    background-color: #3B0E85;
+    width: 23%;
+    height: 46%;
+    border-radius: 50%;
+    left: -5%;
+    top: -10%;
+}
+
+.intera{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+.curiculo-1 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, 20%);
+    width: 20%;
+    border-radius: 5px;
+}
+
+.curiculo-2 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, 20%);
+    width: 20%;
+    border-radius: 5px;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caixa2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: rgb(121, 121, 121);
+}
+
+.fim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10vw;
+}
+
+p {
+    font-size: max(4px, 1vw);
+}
+
+h1 {
+    font-size: max(15px, 2vw);
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+    .curiculo-1 {
+        width: 40%;
+        top: 50%;
+    }
+
+    .curiculo-2 {
+        width: 40%;
+        top: 50%;
+    }
+
+    .caixa {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+    }
+
+    .caixa2 {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+    }
+
+    .intera{
+       width: 100%;
+    }
+    
+    p {
+        font-size: 2vw;
+    }
+    
+    h1 {
+        font-size: 3vw;
+    }
+    
+}
+
+@media (min-width: 1000px) and (max-width: 1020px) {
+    .curiculo-1 {
+        width: 40%;
+    }
+
+    .curiculo-2 {
+        width: 40%;
+    }
+
+    .caixa {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+    }
+
+    .caixa2 {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+    }
+
+    .intera{
+       width: 100%;
+    }    
+    
+    p {
+        font-size: 1.5vw;
+    }
+    
+    h1 {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .curiculo-1 {
+        width: 30%;
+        top: 55%;
+    }
+
+    .curiculo-2 {
+        width: 30%;
+        top: 55%;
+    }
+
+    .caixa {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+    }
+
+    .caixa2 {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+    }
+
+    .intera{
+       width: 100%;
+    }    
+    
+    p {
+        font-size: 1.5vw;
+    }
+    
+    h1 {
+        font-size: 2.5vw;
+    }
+}
