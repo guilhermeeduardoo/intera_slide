@@ -29,6 +29,26 @@ next.addEventListener("click", () => {
     upmargin()
 })
 
+function Modal (idmod,Mod) {
+    const mod = document.getElementById(idmod)
+    const div = document.getElementById(Mod)
+    mod.style.display = 'flex'
+    mod.addEventListener('click', (e) => {
+        if (e.target.id === idmod || e.target.id === Mod) {
+            mod.style.display = 'none'
+        }
+    })
+}
+
+const curl = document.querySelector('.curiculo-1')
+curl.addEventListener('click', () => {
+    Modal('Modal--1','curiculo--big')
+})
+
+const curl2 = document.querySelector('.curiculo-2')
+curl2.addEventListener('click', () => {
+    Modal('Modal--2','curiculo--big')
+})
 
 
 
